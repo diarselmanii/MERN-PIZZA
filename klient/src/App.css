@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+a{
+  color: black !important;
+}
+#span:hover{
+  color: red !important;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+
+}
+#currentUser:hover{
+  cursor: pointer;
+color: #cf1a1a;
+transition: ease-in-out 1s;
+
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 66px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #efefef;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid #f8f9fa;;
+  border-top: none;
+  border-bottom-right-radius: 2px;
+  width: 82px;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;  /* This will make the video cover the entire container while maintaining its aspect ratio */
+  z-index: -1; /* Ensure the video is behind other content */
+}
+.custom-navbar {
+ 
+  background-color: white;
+}
+#carttext{
+  color: white!important;
+}
+#logintext{
+  color: rgb(0, 0, 0)!important;
+}
+#registertext{
+  color: rgb(0, 0, 0)!important;
+}

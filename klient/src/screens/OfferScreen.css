@@ -1,0 +1,94 @@
+/* OffersScreen.css */
+.offers-screen {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newspaper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    animation: slideIn 1s ease-in-out forwards;
+    top: 15vh; /* Adjust the top value to position the newspaper lower */
+}
+
+.newspaper-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    animation: slideIn 1s ease-in-out forwards;
+    top: 15vh; /* Adjust the top value to position the newspaper lower */
+}
+
+.newspaper-illustration {
+    width: 200px;
+    height: 200px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.offers-table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offers-table th,
+.offers-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.offers-table th {
+    background-color: #343a40;
+    color: white;
+    animation: slideDown 1.0s ease-in-out; /* Adjust animation duration */
+}
+
+.add-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

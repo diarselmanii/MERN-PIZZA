@@ -1,0 +1,31 @@
+/* Apply styling to the admin panel section */
+.admin-panel {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.admin-panel h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.admin-functions {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-functions li {
+    margin-bottom: 10px;
+}
+
+.admin-functions a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.admin-functions a:hover {
+    color: #d9534f;
+}
